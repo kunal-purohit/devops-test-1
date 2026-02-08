@@ -21,7 +21,7 @@ def lambda_handler(event, context):
 
         result = table.get_item(Key={"empId": empId})
         item = result["Item"]
-        print(f"Retrieved record: {item}")
+        print(f"Retrieved employee record: {item}")
 
         if item:
             return response(200, item)

@@ -28,6 +28,6 @@ jobs:
             - name: Deploy to Lambda
               run: |
                   aws lambda update-function-code \
-                    --function-name empHandler \
+                    --function-name lambdaTest1  \
                     --s3-bucket smitten-test1-bucket \
                     --s3-key lambda.zip
